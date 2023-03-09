@@ -36,14 +36,6 @@ document.getElementById("Spillinfo").addEventListener("click", function() {
   });
 });
 
-document.getElementById("Spill").addEventListener("click", function() {
-  var target = document.getElementById("7");
-  var targetPosition = target.offsetTop - (window.innerHeight - target.offsetHeight) / 2;
-  window.scrollTo({
-    top: targetPosition,
-    behavior: 'smooth'
-  });
-});
 
 const links = document.querySelectorAll('a');
 const currentPage = window.location.pathname;
