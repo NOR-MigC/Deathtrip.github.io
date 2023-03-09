@@ -1,0 +1,160 @@
+@font-face {
+  font-family:"8-bitArcade" ;
+  src: url(8-bitArcade.ttf);
+}
+@font-face {
+  font-family:"PrefectDOS" ;
+  src: url(PerfectDOS.ttf);
+}
+@font-face {
+  font-family:"RetroGaming" ;
+  src: url(RetroGaming.ttf);
+}
+
+@font-face {
+  font-family:"VCR" ;
+  src: url(VCR.ttf);
+}
+
+@font-face {
+  font-family:"PixelOperator8" ;
+  src: url(Minecraftia-Regular.ttf);
+}
+
+@font-face {
+  font-family:"Minecraftia-Regular" ;
+  src: url(Minecraftia-Regular.ttf);
+}
+
+@font-face {
+  font-family:"upheavtt" ;
+  src: url(upheavtt.ttf);
+}
+
+@font-face {
+  font-family:"videotype" ;
+  src: url(videotype.ttf);
+}
+/*-----------------------------------------------------------------------------*/
+
+h1, h2, h3 {
+  font-family: "RetroGaming";
+  color: white;
+  font-size: 28px;
+}
+
+p {
+font-family: "videotype";
+color: white;
+font-size: 16px;
+line-height: 150%;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+body{
+    background-image: url('Menu.jpg');
+   background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500vh;
+    background-color: #4a4949;
+
+}
+/*-----------------------------------------------------------------------------*/
+body {margin:0;}
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #afaeae9d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #c0c0c0;
+  }
+  
+  .active {
+    background-color: #181616;
+    
+  }
+
+/*-----------------------------------------------------------------------------*/
+  nav {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .CarCrash {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .rect1 {
+    position: relative;
+    z-index: 0;
+  }
+  
+/*-----------------------------------------------------------------------------*/
+
+.spillknapp {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #efe4dc;
+  border: none;
+  color: #342f2f;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 280px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.spillknapp span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.spillknapp span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.spillknapp:hover span {
+  padding-right: 25px;
+}
+
+.spillknapp:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*-----------------------------------------------------------------------------*/
